@@ -1,84 +1,169 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Злобин Савватий Владиславович</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Резюме - Злобин Савватий</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 20mm;
+    }
+
+    body {
+      font-family: "Arial", sans-serif;
+      line-height: 1.5;
+      color: #333;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .resume {
+      max-width: 800px;
+      background: #fff;
+      margin: 20px auto;
+      padding: 40px 50px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      color: #1e40af;
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-top: 25px;
+      color: #1e3a8a;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+    }
+
+    p,
+    li {
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 5px 0 10px 20px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 3px;
+    }
+
+    @media print {
+      body {
+        background: none;
+      }
+
+      .resume {
+        box-shadow: none;
+        margin: 0;
+        padding: 10mm;
+        width: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 22px;
+        color: #000;
+      }
+
+      h2 {
+        font-size: 16px;
+        color: #000;
+        border-color: #888;
+      }
+
+      p,
+      li,
+      .contact {
+        font-size: 12px;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Злобин Савватий Владиславович</h1>
-            <p>Город: Санкт-Петербург</p>
-            <p>Гражданство: Россия, есть разрешение на работу в России</p>
-            <p><strong>Телефон:</strong> <a href="tel:+79500037836">+7 (950) 003-78-36</a></p>
-            <p><strong>Email:</strong> <a href="mailto:zlobin.savva@mail.ru">zlobin.savva@mail.ru</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/zlobinzlobin">@zlobinzlobin</a></p>
-        </header>
+  <div class="resume">
+    <h1>Злобин Савватий</h1>
+    <p class="contact">21 год • Санкт-Петербург • Email: zlobin.savva@mail.ru • GitHub: <a
+        href="https://github.com/Zlobinnn">github.com/Zlobinnn</a></p>
 
-        <section>
-            <h2>Кратко о себе</h2>
-            <p>Я открыт к новым вызовам и быстро обучаюсь. Имею сильные аналитические способности и стремление к постоянному профессиональному развитию. Уверенно владею инструментами разработки, готов решать сложные задачи и вносить вклад в успешную реализацию проектов.</p>
-        </section>
-        
-        <section>
-            <h2>Опыт работы</h2>
-            <div class="job">
-                <p><strong>Gazprom International Limited</strong></p>
-                <p>Февраль 2024 — Июнь 2024 (5 месяцев)</p>
-                <p>Специалист</p>
-                <p>Оптимизация процессов работы с данными для наполнения базы данных в рамках реализации проекта по созданию электронного архива геолого-геофизических и промысловых данных.</p>
-            </div>
-        </section>
-        
+    <h2>Обо мне</h2>
+    <p>Работал над реальным проектом в крупной компании - <strong>Gazprom International Limited</strong>, где занимался
+      оптимизацией процессов работы с данными и участвовал в создании электронного архива.</p>
 
-        <section>
-            <h2>Готовые проекты</h2>
-            <ul>
-                <li>
-                    <strong>Нейронная сеть для задачи классификации «Ирисы Фишера»</strong> — Реализация нейронной сети с нуля на языке C++ для решения задачи классификации данных «Ирисы Фишера»
-                    <br>
-                    <a href="https://github.com/Zlobinnn/Iris-Fischer-neural-network" target="_blank">GitHub проект</a>
-                </li>
-                <li>
-                    <strong>Поиск оптимального маршрута на 2D карте</strong> — Реализация приложения на QT (C++) для создания 2D карты с препятствиями и поиска оптимального маршрута на ней
-                    <br>
-                    <a href="https://github.com/Zlobinnn/project_1373" target="_blank">GitHub проект</a>
-                </li>
-                <li>
-                    <strong>Приложение для управления SQL базой данных на Java</strong> — Реализация приложения на языке Java с функционалом для управления SQL базой данных
-                    <br>
-                    <a href="https://github.com/Zlobinnn/database-management-applications" target="_blank">GitHub проект</a>
-                </li>
-            </ul>
-        </section>
+    <p>Сейчас ищу возможность развиваться как <strong>frontend-разработчик</strong> и применять современные технологии -
+      <strong>React</strong> и <strong>Next.js</strong> - для создания удобных и эффективных web-приложений.
+    </p>
 
-        <section>
-            <h2>Образование</h2>
-            <p>Неоконченное высшее</p>
-            <p>2025 Санкт-Петербургский государственный электротехнический университет "ЛЭТИ" им. В.И. Ульянова (Ленина), Санкт-Петербург</p>
-            <p>ФКТИ, Информационные системы и технологии</p>
-        </section>
 
-        <section>
-            <h2>Ключевые навыки</h2>
-            <ul>
-                <li>C++</li>
-                <li>Git</li>
-                <li>Разработка ПО</li>
-                <li>ООП</li>
-                <li>PostgreSQL</li>
-                <li>Qt</li>
-                <li>MATLAB</li>
-                <li>Деловая переписка</li>
-                <li>Деловое общение</li>
-                <li>MS Word</li>
-                <li>MS Excel</li>
-                <li>Ведение переписки</li>
-                <li>Английский — B1</li>
-            </ul>
-        </section>
+    <h2>Образование</h2>
+    <p><strong>Санкт-Петербургский государственный электротехнический университет "ЛЭТИ" им. В.И. Ульянова
+        (Ленина)</strong></p>
+    <p>Факультет компьютерных технологий и информатики (ФКТИ)<br />
+      Направление: Информационные системы и технологии<br />
+      Год окончания: 2025</p>
+
+    <h2>Опыт работы</h2>
+    <p><strong>Gazprom International Limited</strong><br />
+      Февраль 2024 - Декабрь 2024 (11 месяцев)<br />
+      Должность: <strong>Специалист</strong></p>
+    <ul>
+      <li>Оптимизация процессов работы с данными для наполнения базы данных</li>
+      <li>Участие в проекте по созданию электронного архива геолого-геофизических и промысловых данных</li>
+    </ul>
+
+    <h2>Проекты</h2>
+    <div class="projects">
+      <p><strong>Веб-приложение для аренды автомобилей</strong></p>
+      <p>Возможность поиска, фильтрации и бронирования автомобилей. Использованы технологии: <em>Next.js, Tailwind CSS,
+          Zustand, Prisma, API Routes</em>.</p>
+      <a href="https://github.com/Zlobinnn/smart-drive">GitHub проект</a>
+
+      <p><strong>Нейронная сеть для задачи классификации «Ирисы Фишера»</strong></p>
+      <p>Реализация нейронной сети с нуля на C++ для классификации данных «Ирисы Фишера».</p>
+      <a href="https://github.com/Zlobinnn/Iris-Fischer-neural-network">GitHub проект</a>
+
+      <p><strong>Поиск оптимального маршрута на 2D карте</strong></p>
+      <p>Приложение на Qt (C++) для создания 2D карты с препятствиями и поиска оптимального маршрута.</p>
+      <a href="https://github.com/Zlobinnn/project_1373">GitHub проект</a>
     </div>
+
+    <h2>Навыки</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, TypeScript, React, Next.js, Tailwind CSS</li>
+      <li>Backend: Prisma, API Routes, Node.js</li>
+      <li>Инструменты: Git, GitHub, VS Code, Figma</li>
+      <li>Языки программирования: JavaScript, TypeScript, C++</li>
+    </ul>
+  </div>
 </body>
+
 </html>
